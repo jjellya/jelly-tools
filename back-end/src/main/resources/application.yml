@@ -1,0 +1,18 @@
+server:
+  port: 1681
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Gov_AOSM?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+
+#配置mapper xml文件的路径
+mybatis-plus:
+  mapper-locations: classpath:/edu/dev/backend/dao/xml/*.xml
+
+#返回json的全局时间格式
